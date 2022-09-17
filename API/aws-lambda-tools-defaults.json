@@ -12,5 +12,5 @@
   "template": "serverless.yml",
   "template-parameters": "",
   "function-runtime": "dotnet6",
-  "msbuild-parameters": "--self-contained true"
+  "msbuild-parameters": "--self-contained false"
 }

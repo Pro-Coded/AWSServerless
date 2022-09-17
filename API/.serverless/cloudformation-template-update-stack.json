@@ -161,7 +161,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/AWSServerless/dev/1663391882515-2022-09-17T05:18:02.515Z/bin/Release/net6.0/API.zip"
+          "S3Key": "serverless/AWSServerless/dev/1663392722070-2022-09-17T05:32:02.070Z/bin/Release/net6.0/API.zip"
         },
         "Handler": "API",
         "Runtime": "dotnet6",
@@ -179,14 +179,14 @@
         "ApiLogGroup"
       ]
     },
-    "ApiLambdaVersionKdgK7mvRwOoegnfYJ9gqnsKtTU9F3k2T99Foj2Devw": {
+    "ApiLambdaVersionbxv8x2S3a86IltIDMsFC9CIeAWDw3q5Jzs22D1KNUY": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "U5iFVF0/KYdmh5uI4ZKcUVxOchGi4eUjrhuZ7+NPV/k="
+        "CodeSha256": "td012LADRt7yQF/zV0wEhDDtibHcJ2hPaFnEhezs4Ww="
       }
     },
     "HttpApi": {
@@ -296,7 +296,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersionKdgK7mvRwOoegnfYJ9gqnsKtTU9F3k2T99Foj2Devw"
+        "Ref": "ApiLambdaVersionbxv8x2S3a86IltIDMsFC9CIeAWDw3q5Jzs22D1KNUY"
       },
       "Export": {
         "Name": "sls-AWSServerless-dev-ApiLambdaFunctionQualifiedArn"
