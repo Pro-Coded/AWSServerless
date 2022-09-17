@@ -1,0 +1,20 @@
+service: AWSServerless
+
+provider:
+  httpApi: 
+    payload: "2.0"
+  lambdaHashingVersion: 20201221
+  name: aws
+  region: eu-west-3
+  
+functions: 
+  api: 
+    events: 
+      - 
+        httpApi: "*"
+    handler: API
+    runtime: dotnet6
+    package: 
+      artifact: bin/Release/net6.0/API.zip
+      individually: true
+
